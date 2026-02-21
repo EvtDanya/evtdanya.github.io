@@ -1,3 +1,10 @@
++++
+date = '2026-02-21T12:04:29+07:00'
+draft = false
+title = 'SSRF Pathname Confusion'
+tags: ["ssrf", "bug bounty", "nodejs", "nextjs"]
++++
+
 # SSRF via pathname confusion
 
 ## Affected pattern
