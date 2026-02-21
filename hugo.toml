@@ -10,3 +10,4 @@ theme = "PaperMod"
   homeInfoParams = {Title = "Hi, I'm Danil", Content = "AppSec engineer | Bug hunter | Security researcher"}
   ShowReadingTime = true
   ShowShareButtons = false
+  analyticsGoatCounter = "evtdanya"
