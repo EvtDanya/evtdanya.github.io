@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "Danil | AppSec & Security Research"
 theme = "PaperMod"
 
+[author]
+  name = "Danil"
+
 [params]
   homeInfoParams = {Title = "Hi, I'm Danil", Content = "AppSec engineer | Bug Hunter | CTF Player"}
   ShowReadingTime = true
