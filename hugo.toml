@@ -1,0 +1,9 @@
+baseURL = "https://evtdanya.github.io/"
+languageCode = "en-us"
+title = "Danil | AppSec & Security Research"
+theme = "PaperMod"
+
+[params]
+  homeInfoParams = {Title = "Hi, I'm Danil", Content = "AppSec engineer | Bug Hunter | CTF Player"}
+  ShowReadingTime = true
+  ShowShareButtons = false
