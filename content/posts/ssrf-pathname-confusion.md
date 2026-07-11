@@ -1,7 +1,7 @@
 +++
 date = '2026-02-21T12:04:29+07:00'
 draft = false
-title = 'SSRF Pathname Confusion'
+title = 'SSRF pathname confusion'
 tags = ["ssrf", "bug bounty", "nodejs", "nextjs"]
 +++
 

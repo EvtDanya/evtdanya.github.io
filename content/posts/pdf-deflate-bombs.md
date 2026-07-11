@@ -1,13 +1,13 @@
 +++
 date = '2026-07-10'
 draft = false
-title = 'PDF Deflate Bombs'
+title = 'PDF Deflate bombs'
 tags = ["pdf", "dos", "deflate", "itext", "parsers"]
 images = ["/images/posts/pdf-deflate-bombs.png"]
 
 [cover]
 image = "/images/posts/pdf-deflate-bombs.png"
-alt = "PDF Deflate Bombs"
+alt = "PDF Deflate bombs"
 relative = false
 +++
 
