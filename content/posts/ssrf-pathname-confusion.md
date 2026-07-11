@@ -76,7 +76,7 @@ const getProxyServer = (pathname: string) => {
 }
 ```
 
-Since `pathname` is fully user-controlled, the `*@localhost:8000` payloads allowed full SSRF — including reading responses from internal services.
+Since `pathname` is fully user-controlled, the `*@localhost:8000` payloads allowed full SSRF - including reading responses from internal services.
 
 From 13.4.13 onward, internal requests switched to `fetch()` with proper URL normalization. `fetch` rejects malformed parts, blocking the attack.
 

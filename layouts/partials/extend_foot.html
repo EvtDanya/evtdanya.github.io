@@ -1,2 +1,16 @@
 <script data-goatcounter="https://evtdanya.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
+
+{{- if .Page.Store.Get "hasMermaid" }}
+<script src="/js/vendor/mermaid.min.js"></script>
+<script>
+  window.mermaid.initialize({
+    startOnLoad: false,
+    theme: document.body.classList.contains("dark") ? "dark" : "default"
+  });
+
+  window.mermaid
+    .run({ querySelector: ".mermaid" })
+    .catch((error) => console.error("Mermaid failed to render", error));
+</script>
+{{- end }}
