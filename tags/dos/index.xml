@@ -1,0 +1,15 @@
+&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dos on My researches</title><link>https://evtdanya.github.io/tags/dos/</link><description>Recent content in Dos on My researches</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 07 Jul 10012 00:00:00 +0000</lastBuildDate><atom:link href="https://evtdanya.github.io/tags/dos/index.xml" rel="self" type="application/rss+xml"/><item><title>PDF Deflate Bombs</title><link>https://evtdanya.github.io/posts/pdf-deflate-bombs/</link><pubDate>Fri, 07 Jul 10012 00:00:00 +0000</pubDate><guid>https://evtdanya.github.io/posts/pdf-deflate-bombs/</guid><description>&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#pdf-deflate-bombs"&gt;PDF Deflate bombs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#pdf-streams-in-one-minute"&gt;PDF streams in one minute&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#where-the-bomb-lives"&gt;Where the bomb lives&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#lazy-parsing"&gt;Lazy parsing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#the-more-realistic-itext-trigger-pdfstamper"&gt;The more realistic iText trigger: PdfStamper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#why-the-protection-did-not-help"&gt;Why the protection did not help&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#why-this-matters-in-real-services"&gt;Why this matters in real services&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#practical-mitigations"&gt;Practical mitigations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#takeaway"&gt;Takeaway&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="pdf-deflate-bombs"&gt;PDF Deflate bombs&lt;/h1&gt;
+&lt;p&gt;While reviewing PDF processing flows in internal services, I started digging into known attack surfaces around PDF parsers and the internals of the format itself.&lt;/p&gt;
+&lt;p&gt;PDFs turned out to be a surprisingly rich target: the format is built around indirect objects, streams, filters, decoding logic, fonts, images, metadata and many other structures that can become interesting from an attack perspective.&lt;/p&gt;</description></item></channel></rss>
