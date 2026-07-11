@@ -3,12 +3,37 @@
 </div>
 {{- if not (.Page.Store.Get "hasMermaidScript") }}
 {{- .Page.Store.Set "hasMermaidScript" true }}
-<script src="/js/vendor/mermaid.min.js"></script>
+<style>
+  .mermaid {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1.5rem auto;
+    overflow-x: auto;
+  }
+
+  .mermaid svg {
+    display: block;
+    width: min(100%, 980px);
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+</style>
+<script defer src="/js/vendor/mermaid.min.js"></script>
 <script>
   window.addEventListener("DOMContentLoaded", function () {
     window.mermaid.initialize({
       startOnLoad: false,
-      theme: document.documentElement.dataset.theme === "dark" ? "dark" : "default"
+      theme: document.documentElement.dataset.theme === "dark" ? "dark" : "default",
+      flowchart: {
+        htmlLabels: true,
+        nodeSpacing: 60,
+        rankSpacing: 70,
+        padding: 18,
+        wrappingWidth: 260,
+        useMaxWidth: true
+      }
     });
 
     window.mermaid
