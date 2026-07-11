@@ -1,4 +1,19 @@
-{{- .Page.Store.Set "hasMermaid" true -}}
 <div class="mermaid">
 {{ .Inner | htmlEscape | safeHTML }}
 </div>
+{{- if not (.Page.Store.Get "hasMermaidScript") }}
+{{- .Page.Store.Set "hasMermaidScript" true }}
+<script src="/js/vendor/mermaid.min.js"></script>
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    window.mermaid.initialize({
+      startOnLoad: false,
+      theme: document.documentElement.dataset.theme === "dark" ? "dark" : "default"
+    });
+
+    window.mermaid
+      .run({ querySelector: ".mermaid" })
+      .catch((error) => console.error("Mermaid failed to render", error));
+  });
+</script>
+{{- end }}
