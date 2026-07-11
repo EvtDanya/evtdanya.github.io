@@ -228,15 +228,15 @@ The simplified attack chain looked like this:
 
 ```mermaid
 flowchart TD
-    A[Application receives an untrusted PDF]
-    B[PdfReader parses the document structure]
-    C[Application creates PdfStamper]
-    D[PdfStamperImp.readColorProfile]
-    E[Resolve Catalog → OutputIntents → DestOutputProfile]
-    F[PdfReader.getStreamBytes]
-    G[Decode the ICC profile using FlateDecode]
-    H[Materialize the decoded stream in memory]
-    I[Heap exhaustion or OutOfMemoryError]
+    A["Application receives an untrusted PDF"]
+    B["PdfReader parses the document structure"]
+    C["Application creates PdfStamper"]
+    D["PdfStamperImp.readColorProfile"]
+    E["Resolve Catalog / OutputIntents / DestOutputProfile"]
+    F["PdfReader.getStreamBytes"]
+    G["Decode the ICC profile using FlateDecode"]
+    H["Materialize the decoded stream in memory"]
+    I["Heap exhaustion or OutOfMemoryError"]
 
     A --> B
     B --> C

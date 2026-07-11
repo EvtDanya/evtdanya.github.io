@@ -1,12 +1,12 @@
 <script data-goatcounter="https://evtdanya.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 
-{{- if .Page.Store.Get "hasMermaid" }}
+{{- if and .Page (.Page.Store.Get "hasMermaid") }}
 <script src="/js/vendor/mermaid.min.js"></script>
 <script>
   window.mermaid.initialize({
     startOnLoad: false,
-    theme: document.body.classList.contains("dark") ? "dark" : "default"
+    theme: document.documentElement.dataset.theme === "dark" ? "dark" : "default"
   });
 
   window.mermaid
